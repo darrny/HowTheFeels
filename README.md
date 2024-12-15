@@ -37,7 +37,7 @@
 
 ## Getting Started 🚀
 
-- Visit the website and simply try it out!
+- Visit the [website](https://how-the-feels.vercel.app/) and simply try it out!
 
 ## Contributing 🤝
 
