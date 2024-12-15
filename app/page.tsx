@@ -190,7 +190,7 @@ const EmotionAnalysis = () => {
                 onChange={(e) => setText(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Enter your text to analyze emotions... (Press Enter to analyze, Shift+Enter for new line)"
-                className="w-full p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-xl border-2 border-opacity-20 h-40 focus:outline-none focus:ring-2 transition-all duration-300 text-gray-800"
+                className="w-full p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-xl border-opacity-20 h-40 focus:outline-none focus:ring-2 transition-all duration-300 text-gray-800"
                 style={{ borderColor: emotions.length > 0 ? theme.color : '#000' }}
                 required
               />
