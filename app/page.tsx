@@ -162,9 +162,16 @@ const EmotionAnalysis = () => {
   const theme = emotionThemes[topEmotion as keyof typeof emotionThemes];
 
   return (
-    <div className="min-h-screen relative overflow-hidden transition-all duration-500 bg-gray-50">
+    <div
+      className="min-h-screen relative overflow-hidden transition-all duration-500"
+      style={{
+        background: emotions.length > 0
+          ? `linear-gradient(135deg, ${theme.color}, ${theme.darkColor})`
+          : '#FFFFFF',
+      }}
+    >
       <EmojiRain emojis={allEmojis} />
-      
+
       <div className="relative min-h-screen z-10">
         <main className="max-w-4xl mx-auto p-8">
           <div className="flex items-center justify-center mb-8 gap-4">
@@ -226,9 +233,6 @@ const EmotionAnalysis = () => {
                   <span>{topEmotion}</span>
                   <span style={{ color: theme.color }}>{theme.emoji}</span>
                 </h2>
-                <p className="text-xl text-gray-600">
-                  Feeling {theme.mood}
-                </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
