@@ -4,6 +4,7 @@ import { NextResponse } from 'next/server';
 // Initialize Hugging Face inference with our API key
 const Hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 
+export const maxDuration = 60;
 export async function POST(req: Request) {
   try {
     // Extract the text from the request body
